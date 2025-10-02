@@ -68,7 +68,6 @@ By using the Kaggle Titanic dataset, this study aims to:
 - Data visualization (bar plots, histograms) used to explore survival by gender, class, and age group.  
 
 **Python Libraries Used**  
-```python
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -78,83 +77,92 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score, confusion_matrix
 
-**Models and Results**
 
-### 1. Overall Survival Summary  
-- **Overall Survival Rate**: ~38%  
-- **Female Survival Rate**: ~74%  
-- **Male Survival Rate**: ~19%  
-- **Children (<18) Survival Rate**: ~52%  
-- **Adult (≥18) Survival Rate**: ~37%  
+Models and Results
+1. Overall Survival Summary
+Overall Survival Rate: ~38%
 
----
+Female Survival Rate: ~74%
 
-### 2. Survival by Gender × Child  
-- Female children: highest survival rate  
-- Male children: higher than adult males but lower than females  
-- Adult males: lowest survival rate  
+Male Survival Rate: ~19%
 
----
+Children (<18) Survival Rate: ~52%
 
-### 3. Survival by Class  
-- **1st class**: highest (~63%)  
-- **2nd class**: medium (~47%)  
-- **3rd class**: lowest (~24%)  
+Adult (≥18) Survival Rate: ~37%
 
----
+2. Survival by Gender × Child
+Female children: highest survival rate
 
-### 4. Age Statistics  
-- Survivors: Median ~28, Mean ~28.3  
-- Non-survivors: Median ~28, Mean ~30.6  
-- Standard deviation ~14 for both groups  
-- Mode clustered in 20–30 age range  
+Male children: higher than adult males but lower than females
 
----
+Adult males: lowest survival rate
 
-### 5. Survival by Age Group  
-- **0–9 years**: >60% survival rate  
-- **10–19 years**: ~40% survival rate  
-- **20–39 years**: lowest (~30–35%)  
-- **40+ years**: slightly higher (~35–40%)  
+3. Survival by Class
+1st class: highest (~63%)
 
----
+2nd class: medium (~47%)
 
-### 6. Visualizations  
-Three charts were generated and embedded in the Excel output:  
-1. Bar chart – Survival Rate by Gender  
-2. Bar chart – Survival Rate by Class  
-3. Line chart – Survival Rate by Age Group  
+3rd class: lowest (~24%)
 
----
+4. Age Statistics
+Survivors: Median ~28, Mean ~28.3
 
-### Conclusion  
-- Gender and class are the strongest predictors of survival.  
-- Children (especially 0–9 years old) had a clear survival advantage, consistent with “women and children first” policies.  
-- Socio-economic status, reflected by passenger class, played a decisive role.  
-- Age had limited overall influence, except for young children.  
+Non-survivors: Median ~28, Mean ~30.6
 
----
+Standard deviation ~14 for both groups
 
-## Data Storage and Sharing  
-- **Primary Storage**: CSV files stored locally and on GitHub/Kaggle.  
-- **Backup Strategy**: 3-2-1 rule (local machine + GitHub repo + Kaggle copy).  
-- **License**: Open Data (CC0 1.0).  
-- **Access**: Publicly available via Kaggle.  
-- **DOI**: N/A – dataset link provided above.  
+Mode clustered in 20–30 age range
 
----
+5. Survival by Age Group
+0–9 years: >60% survival rate
 
-## Reflection  
+10–19 years: ~40% survival rate
 
-### Metadata Standard  
-- DDI (Data Documentation Initiative) was chosen because it is widely accepted in social science and suitable for demographic datasets.  
+20–39 years: lowest (~30–35%)
 
-### Template/Software  
-- Created using GitHub ReadMe Markdown format.  
+40+ years: slightly higher (~35–40%)
 
-### Challenges & Solutions  
-- **Challenge**: Balancing technical details with readability.  
-  - **Solution**: Wrote in technical-first style, then simplified for accessibility.  
-- **Challenge**: Handling missing values (*Age*, *Cabin*).  
-  - **Solution**: Applied median imputation and explicitly documented missingness.  
+6. Visualizations
+Three charts were generated and embedded in the Excel output:
 
+Bar chart – Survival Rate by Gender
+
+Bar chart – Survival Rate by Class
+
+Line chart – Survival Rate by Age Group
+
+Conclusion
+Gender and class are the strongest predictors of survival.
+
+Children (especially 0–9 years old) had a clear survival advantage, consistent with “women and children first” policies.
+
+Socio-economic status, reflected by passenger class, played a decisive role.
+
+Age had limited overall influence, except for young children.
+
+Data Storage and Sharing
+Primary Storage: CSV files stored locally and on GitHub/Kaggle.
+
+Backup Strategy: 3-2-1 rule (local machine + GitHub repo + Kaggle copy).
+
+License: Open Data (CC0 1.0).
+
+Access: Publicly available via Kaggle.
+
+DOI: N/A – dataset link provided above.
+
+Reflection
+Metadata Standard
+DDI (Data Documentation Initiative) was chosen because it is widely accepted in social science and suitable for demographic datasets.
+
+Template/Software
+Created using GitHub ReadMe Markdown format.
+
+Challenges & Solutions
+Challenge: Balancing technical details with readability.
+
+Solution: Wrote in technical-first style, then simplified for accessibility.
+
+Challenge: Handling missing values (Age, Cabin).
+
+Solution: Applied median imputation and explicitly documented missingness.

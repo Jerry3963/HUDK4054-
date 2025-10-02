@@ -68,6 +68,7 @@ By using the Kaggle Titanic dataset, this study aims to:
 - Data visualization (bar plots, histograms) used to explore survival by gender, class, and age group.  
 
 **Python Libraries Used**  
+```Python
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -76,6 +77,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score, confusion_matrix
+```
 
 
 Models and Results
